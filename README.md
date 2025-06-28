@@ -1,6 +1,6 @@
 # 🚐 My Matatu App
 
-My Matatu is a smart transport application designed to help commuters in Kenya easily track matatus, plan their routes, and get real-time updates — all through a mobile-first experience. The system also provides tools for conductors to share their matatu’s location and status, and for SACCOs/admins to monitor fleet operations via a web panel.
+My Matatu is a smart transport application designed to help commuters in Kenya easily track matatus, plan their routes, and get real-time updates — all through a mobile-first experience. The system also provides tools for conductors to share their matatu’s location and status, and for SACCOs/admins to monitor fleet operations via a web panel. Here is the link to the board https://github.com/users/Agabamark27/projects/1
 
 ---
 
