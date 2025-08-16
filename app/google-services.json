@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "554871354021",
+    "project_id": "my-matatu-app-f6937",
+    "storage_bucket": "my-matatu-app-f6937.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554871354021:android:d14f8856cd22fdc14a934c",
+        "android_client_info": {
+          "package_name": "com.example.mymatauapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554871354021-kc3udmtor0klfr6or9m7pg19i5c3kjq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3KY6aN8_LXV4KUInAmj79rxsAItOMwrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554871354021-kc3udmtor0klfr6or9m7pg19i5c3kjq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

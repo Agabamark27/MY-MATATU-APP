@@ -1,0 +1,77 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+    // ADD THIS LINE
+    alias(libs.plugins.firebase.crashlytics)
+}
+
+android {
+    namespace 'com.example.mymatauapp'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.mymatauapp"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    // Keep a single, up-to-date Firebase BOM
+    implementation(platform("com.google.firebase:firebase-bom:34.0.0"))
+
+    // Declare your dependencies without versions.
+    // The BOM will automatically handle the correct versions.
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+
+    // Firebase dependencies (versions are managed by the BOM)
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-storage'
+
+    //Google maps dependencies
+    implementation 'com.google.android.gms:play-services-maps:18.2.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.maps.android:android-maps-utils:3.0.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+
+    // Google Play Services and other dependencies
+    implementation libs.play.services.maps
+    implementation libs.annotation
+    implementation libs.credentials
+    implementation libs.credentials.play.services.auth
+    implementation libs.googleid
+    implementation 'com.google.android.libraries.places:places:4.4.1'
+
+    //PLACES API
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}
